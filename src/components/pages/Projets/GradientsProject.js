@@ -7,7 +7,7 @@ const GradientsProject = () => {
         <div className="mb-3 pb-3 border-b border-1 border-grey flex justify-between ">
           <h3 className="text-xl">Gradients Project</h3>
           <a
-            href="https://github.com/Westindiess/Gradient-Project"
+            href="https://github.com/Westindiess/TS-Gradient-Redux"
             rel="noopener noreferrer"
             target="_blank"
           >
