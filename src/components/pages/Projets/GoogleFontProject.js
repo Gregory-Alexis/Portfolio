@@ -1,12 +1,6 @@
 import GoogleFont from "../../../assets/GoogleFont.png";
-import React, { useState } from "react";
 
 const GoogleFontProject = () => {
-  const [detailsGoogleFront, setDetailsGoogleFront] = useState(false);
-
-  const handleDetailsGoogleFront = () => {
-    setDetailsGoogleFront(!detailsGoogleFront);
-  };
   return (
     <div className="text-sm md:text-base lg:text-lg">
       {/* "cards-style" (voir fichier index.css) */}
@@ -42,34 +36,6 @@ const GoogleFontProject = () => {
             className="w-full h-48 object-cover mb-2 rounded-lg xl:h-full"
           />
         </a>
-        <div className="pt-2">
-          <button
-            className="border rounded-md p-1 font-bold hover:text-lightblue"
-            onClick={handleDetailsGoogleFront}
-          >
-            Détails
-          </button>
-
-          {detailsGoogleFront && (
-            <p className="pt-4">
-              <small>
-                Projet réalisé en formation. <br />
-                Les objectifs étaient de:
-                <br />- Récupérer les données via l'API google font.
-                <br />- Les Afficher dans des cartes avec le nom de la police,
-                de son variant, de sa catégorie, l'aperçu et le lien direct vers
-                la police sélectionnée.
-                <br />
-                - D'ajouter un filtre permettant de choisir entre les 10 polices
-                les plus populaires, les plus récentes et les plus tendances.
-                <br />- Pouvoir changer de texte dans la section 'Tapez votre
-                text' et qu'il s'actualise en même temps dans les cartes.
-                <br />- Intégrer une barre "range" qui augmente ou diminue la
-                taille de la police.
-              </small>
-            </p>
-          )}
-        </div>
       </div>
     </div>
   );

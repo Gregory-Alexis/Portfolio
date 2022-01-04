@@ -1,12 +1,6 @@
-import React, { useState } from "react";
 import Movie from "../../../assets/ParticeepProject.png";
 
 const MovieProject = () => {
-  const [detailsMovieProject, setDetailsSMovieProject] = useState(false);
-
-  const handleDetailsMovieProject = () => {
-    setDetailsSMovieProject(!detailsMovieProject);
-  };
   return (
     <div className="text-sm md:text-base lg:text-lg ">
       <div className="cards-style ">
@@ -41,55 +35,6 @@ const MovieProject = () => {
             className="w-full h-48 object-cover mb-2 rounded-lg xl:h-full"
           />
         </a>
-        <div className="pt-2 ">
-          <button
-            className="border rounded-md p-1 font-bold hover:text-lightblue"
-            onClick={handleDetailsMovieProject}
-          >
-            Détails
-          </button>
-          {detailsMovieProject && (
-            <p className="pt-4">
-              <small>
-                Projet React Interview par{" "}
-                <a
-                  href="https://github.com/Particeep/react-interview"
-                  className="underline hover:text-lightblue"
-                >
-                  Particeep
-                </a>
-                . <br />
-                Objectifs:
-                <br />
-                - Lister les films dans des cartes avec: le titre en gras, la
-                catégorie et une jauge type Youtube indiquant le ratio
-                likes/dislikes. Les cartes doivent être côtes à côtes et
-                responsive. Càd que lorsque la fenêtre se réduit, les cartes
-                sautent à la ligne suivante.
-                <br />
-                - Ajouter un bouton dans les cartes permettant de supprimer
-                celle-ci.
-                <br />
-                - Ajouter un bouton toggle like/dislike.
-                <br />- Ajouter un filtre par catégorie (de type multiselect) en
-                supposant qu'on ne les connaisse pas à l'avance (il faut donc
-                les récupérer dynamiquement depuis les films). Si tous les films
-                d'une catégorie sont supprimés, celle-ci ne doit plus appraître.
-                <br /> - Ajouter un système de pagination avec les
-                fonctionnalités suivantes:
-                <br /> 1) Boutons précédent/suivant <br />
-                2) Choix du nombre d'élements affichés par page (4, 8 ou 12).
-                <br /> - Prennez des initiatives, il y a des points bonus si :{" "}
-                <br />
-                1) C'est jolie.
-                <br />
-                2) Vous utilisez correnct Redux (Dans le projet j'utilise
-                useReducer) .<br />
-                3) Il y a une attention aux détails.
-              </small>
-            </p>
-          )}
-        </div>
       </div>
     </div>
   );

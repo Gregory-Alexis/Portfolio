@@ -1,13 +1,6 @@
-import { useState } from "react";
 import Gradients from "../../../assets/gradients.png";
 
 const GradientsProject = () => {
-  const [detailsGradient, setDetailsGradient] = useState(false);
-
-  const handleDetailsGradient = () => {
-    setDetailsGradient(!detailsGradient);
-  };
-
   return (
     <div className="text-sm md:text-base lg:text-lg">
       <div className="cards-style xl:ml-auto">
@@ -42,36 +35,6 @@ const GradientsProject = () => {
             className="w-full h-48 object-cover mb-2 rounded-lg xl:h-full"
           />
         </a>
-        <div className="pt-2 ">
-          <button
-            className="border rounded-md p-1 font-bold hover:text-lightblue"
-            onClick={handleDetailsGradient}
-          >
-            Détails
-          </button>
-          {detailsGradient && (
-            <p className="pt-4">
-              <small>
-                Projet réalisé en formation.
-                <br /> Les objectifs étaient de:
-                <br />- Créer un Header et y ajouter 3 bouttons qui permettaient
-                de choisir la couleur du gradient suivant, précédent ou d'un
-                gradient aléatoire.
-                <br />- D'ajouter un filtre permettant d'afficher les gradients
-                en fonction de leurs teintes (bleu, rouge, orange, etc...) ou de
-                tous les afficher.
-                <br />- D'ajouter un autre filtre dans les cartes qui permettait
-                d'afficher les dégradés en fonctions de leurs tags de couleur.
-                <br />
-                - Mettre dans les cartes un boutton "Plein écran" qui redirige
-                vers une autre page.
-                <br />- Sur cette nouvelle page, il fallait créer 3 bouttons
-                (home, suivant, précédent) et afficher les dégradés de couleur
-                en plein écran avec leurs noms et leurs codes respectif.
-              </small>
-            </p>
-          )}
-        </div>
       </div>
     </div>
   );

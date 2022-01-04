@@ -1,12 +1,6 @@
-import { useState } from "react";
 import BBP from "../../../assets/BBP.png";
 
 const BreakingBadProject = () => {
-  const [detailsBreakingBad, setDetailsBreakingBad] = useState(false);
-  const handleDetailsBreakingBad = () => {
-    setDetailsBreakingBad(!detailsBreakingBad);
-  };
-
   return (
     <div className="text-sm md:text-base lg:text-lg ">
       <div className="cards-style ">
@@ -41,31 +35,6 @@ const BreakingBadProject = () => {
             className="w-full h-48 object-cover mb-2 rounded-lg xl:h-full"
           />
         </a>
-        <div className="pt-2 ">
-          <button
-            className="border rounded-md p-1 font-bold hover:text-lightblue"
-            onClick={handleDetailsBreakingBad}
-          >
-            Détails
-          </button>
-          {detailsBreakingBad && (
-            <p className="pt-4">
-              <small>
-                - Récupération les données via l'API Breaking Bad
-                <br />
-                - Ces cartes contiennent les informations des personnages de la
-                série.
-                <br />
-                - Les informations s'afficheront avec une transition en cliquand
-                sur le boutton contenu dans celle-ci.
-                <br />
-                - Ajout d'un système de pagination
-                <br />- Ajout d'un filtre permettant de rechercher les
-                personnages par leurs noms
-              </small>
-            </p>
-          )}
-        </div>
       </div>
     </div>
   );
