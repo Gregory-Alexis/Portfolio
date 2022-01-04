@@ -1,12 +1,6 @@
-import React, { useState } from "react";
 import Meteo from "../../../assets/Meteo.png";
 
 const MeteoProject = () => {
-  const [detailsMeteo, setMeteo] = useState(false);
-
-  const handleDetailsMovieProject = () => {
-    setMeteo(!detailsMeteo);
-  };
   return (
     <div className="text-sm md:text-base lg:text-lg ">
       <div className="cards-style ">
