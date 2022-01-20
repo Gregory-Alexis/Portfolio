@@ -3,6 +3,7 @@ import GoogleFontProject from "./Projets/GoogleFontProject";
 import GradientsProject from "./Projets/GradientsProject.js";
 import MeteoProject from "./Projets/MeteoProject";
 import MovieProject from "./Projets/MovieProject";
+import TodoListProject from "./Projets/TodoListProject";
 
 const Projets = () => {
   return (
@@ -30,6 +31,7 @@ const Projets = () => {
         <GradientsProject />
         <GoogleFontProject />
         <BreakingBadProject />
+        <TodoListProject />
       </section>
     </article>
   );
