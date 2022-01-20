@@ -25,7 +25,7 @@ const GoogleFontProject = () => {
           </a>
         </div>
         <a
-          href="https://google-font.netlify.app/"
+          href="https://googlefont.netlify.app"
           alt="image projet google font"
           rel="noopener noreferrer"
           target="_blank"
